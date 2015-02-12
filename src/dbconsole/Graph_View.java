@@ -46,7 +46,7 @@ public class Graph_View extends Frame implements ActionListener, WindowListener{
 		 JFreeChart chart = 
 	      ChartFactory.createLineChart("都道府県",
 	                                   "年度",
-	                                   "ランク",
+	                                   "ミカン収穫量順位",
 	                                   data,
 	                                   PlotOrientation.VERTICAL,
 	                                   true,

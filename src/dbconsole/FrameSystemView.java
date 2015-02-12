@@ -20,9 +20,9 @@ import java.sql.SQLException;
 
 
 public class FrameSystemView extends Frame implements ActionListener ,WindowListener {
-	private Button b1 = new Button("表示");
+	private Button b1 = new Button("ミカン収穫量順位表示");
 	private Button b2 = new Button("グラフ");
-	TextArea ta = new TextArea("",10,25);
+	TextArea ta = new TextArea("",20,35);
 	
 	public FrameSystemView(FrameSystemController controller) {
 		// TODO Auto-generated constructor stub
@@ -57,7 +57,7 @@ public class FrameSystemView extends Frame implements ActionListener ,WindowList
 				        score = rs.getInt("Year");
 				        ta.append("都道府県：" + id);
 				        ta.append("\n");
-				        ta.append("ランク：" + name);
+				        ta.append("ミカン収穫量順位：" + name);
 				        ta.append("\n");
 				        ta.append("年：" + score);
 				        ta.append("\n");
